@@ -165,7 +165,7 @@
 "di" = (/obj/structure/table/standard,/obj/item/weapon/stock_parts/subspace/ansible,/obj/item/weapon/stock_parts/subspace/ansible,/obj/item/weapon/stock_parts/subspace/ansible,/turf/simulated/floor/tiled,/area/space)
 "dj" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/pda_multicaster/prebuilt,/turf/simulated/floor/bluegrid,/area/tcommsat/chamber)
 "dk" = (/obj/structure/table/standard,/obj/item/weapon/stock_parts/subspace/transmitter,/obj/item/weapon/stock_parts/subspace/transmitter,/turf/simulated/floor/tiled,/area/space)
-"dl" = (/obj/structure/table/standard,/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor/tiled,/area/space)
+"dl" = (/obj/structure/table/standard,/obj/item/weapon/stock_parts/subspace/filter,/obj/item/weapon/stock_parts/subspace/filter,/obj/item/weapon/stock_parts/subspace/filter,/obj/item/weapon/stock_parts/subspace/filter,/obj/item/weapon/stock_parts/subspace/filter,/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor/tiled,/area/space)
 "dm" = (/obj/structure/table/standard,/obj/item/weapon/stock_parts/subspace/crystal,/obj/item/weapon/stock_parts/subspace/crystal,/obj/item/weapon/stock_parts/subspace/crystal,/turf/simulated/floor/tiled,/area/space)
 "dn" = (/obj/machinery/telecomms/server/presets/science,/obj/effect/floor_decal/industrial/outline/grey,/turf/simulated/floor/tiled/dark,/area/tcommsat/chamber)
 "do" = (/obj/machinery/telecomms/server/presets/medical,/obj/effect/floor_decal/industrial/outline/grey,/turf/simulated/floor/tiled/dark,/area/tcommsat/chamber)

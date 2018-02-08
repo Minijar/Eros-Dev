@@ -76,6 +76,28 @@
 	dock_target_offsite = "trade_shuttle_bay"
 
 //////////////////////////////////////////////////////////////
+/datum/shuttle/ferry/multidock/specops/ert
+	name = "Special Operations"
+	location = 0
+	warmup_time = 10
+	area_offsite = /area/shuttle/specops/station	//centcom is the home station, the Exodus is offsite
+	area_station = /area/shuttle/specops/centcom
+	docking_controller_tag = "specops_shuttle_port"
+	docking_controller_tag_station = "specops_shuttle_port"
+	docking_controller_tag_offsite = "specops_shuttle_port"
+	dock_target_station = "specops_centcom_dock"
+	dock_target_offsite = "specops_dock_airlock"
+
+/datum/shuttle/ferry/centcom
+	name = "Centcom"
+	location = 1
+	warmup_time = 10
+	area_offsite = /area/shuttle/transport1/centcom
+	area_station = /area/shuttle/transport1/station
+	docking_controller_tag = "centcom_shuttle"
+	dock_target_station = "centcom_shuttle_dock_airlock"
+	dock_target_offsite = "centcom_shuttle_bay"
+
 // Away Mission Shuttle
 // TODO - Not implemented yet on new map
 /*
@@ -161,29 +183,29 @@
 	warmup_time = 8
 	move_time = 60
 	origin = /area/syndicate_station/start
-	//interim = /area/syndicate_station/transit // Disabled until this even exists.
+	interim = /area/syndicate_station/transit
 	start_location = "Mercenary base"
 	destinations = list(
-		//"Northwest of the station" = /area/syndicate_station/northwest,
+		"Northwest of the facility" = /area/syndicate_station/northwest,
 		//"North of the station" = /area/syndicate_station/north,
 		//"Northeast of the station" = /area/syndicate_station/northeast,
 		//"(Land) Southwest of Tether" = /area/syndicate_station/southwest,
 		//"South of the station" = /area/syndicate_station/south,
-		//"Southeast of the station" = /area/syndicate_station/southeast,
+		"Southeast of the facility" = /area/syndicate_station/southeast,
 		//"Telecomms Satellite" = /area/syndicate_station/commssat,
-		"(Land) Solar farm west of Tether" = /area/syndicate_station/mining,
-		"Tether spaceport" = /area/syndicate_station/arrivals_dock
+		//"(Land) Solar farm west of Tether" = /area/syndicate_station/mining,
+		"Eros Docking Port #03" = /area/syndicate_station/arrivals_dock
 		)
 	docking_controller_tag = "merc_shuttle"
 	destination_dock_targets = list(
 		"Mercenary base" = "merc_base",
-		"Tether spaceport" = "nuke_shuttle_dock_airlock",
+		"Eros Docking Port #03" = "nuke_shuttle_dock_airlock",
 		)
 	announcer = "Automated Traffic Control"
 
 /datum/shuttle/multi_shuttle/mercenary/New()
-	arrival_message = "Attention. An unregistered vessel is approaching Virgo-3B."
-	departure_message = "Attention. A unregistered vessel is now leaving Virgo-3B."
+	arrival_message = "Attention: An unregistered vessel is approaching the Eros Facility."
+	departure_message = "Attention: An unregistered vessel is now leaving the Eros Facility."
 	..()
 
 //////////////////////////////////////////////////////////////

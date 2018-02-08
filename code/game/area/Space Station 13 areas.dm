@@ -173,6 +173,11 @@ area/space/atmosalert()
 	name = "\improper Emergency Shuttle Transit"
 	icon_state = "shuttle"
 
+
+/area/syndicate_station/transit
+	name = "\improper Mercenary Shuttle Transit"
+	icon_state = "shuttle"
+
 /area/shuttle/escape_pod1
 	name = "\improper Escape Pod One"
 	music = "music/escape.ogg"
